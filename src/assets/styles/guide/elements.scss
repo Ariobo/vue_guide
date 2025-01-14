@@ -1,0 +1,9 @@
+.box {
+  $this: &;
+
+  & {
+    border: 1px solid var(--c-black-500);
+    border-radius: var(--round-sm);
+    background-color: var(--c-white);
+  }
+}

@@ -1,0 +1,74 @@
+@use './guide/elements.scss';
+@use './guide/colors';
+
+:root {
+  --c-text-1: rgb(57, 57, 60);
+  --c-text-2: rgba(57, 57, 60, 0.78);
+  --c-text-3: rgba(57, 57, 60, 0.56);
+
+  --c-text-d: #0a090a;
+
+  --c-border: rgba(0, 0, 0, 0.1);
+  --c-border-1: rgba(0, 0, 0, 0.15);
+  --c-divider: rgba(57, 57, 60, 0.1);
+
+  --c-bg: #fff;
+  --c-bg-1: rgba(226, 226, 227, 0.35);
+  --c-bg-2: rgba(226, 226, 227, 0.65);
+  --c-bg-3: rgb(226, 226, 227);
+
+  --c-white: #ffffff;
+  --c-black: #000000;
+
+  --c-neutral: var(--c-black);
+  --c-neutral-inverse: var(--c-white);
+
+  --fs: 15px;
+  --fs-xs: 12px;
+  --fs-sm: 13px;
+  --fs-lg: 16px;
+  --fs-xl: 18px;
+  --fs-2xl: 26px;
+
+  --round-sm: 0.25rem;
+  --round-md: 0.5rem;
+  --round-lg: 1rem;
+}
+
+:root {
+  --c-text-1: rgba(57, 57, 60);
+  --c-text-2: rgba(57, 57, 60, 0.78);
+  --c-text-3: rgba(57, 57, 60, 0.56);
+
+  --c-primary: rgb(230, 0, 126);
+  --c-primary-5: rgba(230, 0, 126, 0.05);
+  --c-primary-10: rgba(230, 0, 126, 0.1);
+  --c-primary-30: rgba(230, 0, 126, 0.3);
+  --c-primary-50: rgba(230, 0, 126, 0.5);
+  --c-primary-75: rgba(230, 0, 126, 0.75);
+
+  --c-primary-l: var(--c-primary-75);
+
+  --c-sub: rgb(170, 177, 181);
+  --c-sub-5: rgba(170, 177, 181, 0.05);
+  --c-sub-10: rgba(170, 177, 181, 0.1);
+  --c-sub-30: rgba(170, 177, 181, 0.3);
+  --c-sub-50: rgba(170, 177, 181, 0.5);
+  --c-sub-75: rgba(170, 177, 181, 0.75);
+  --c-sub-l: var(--c-sub-75);
+
+  --c-accent: #b7aeaf;
+}
+
+:root {
+  --vp-shadow-1: 0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --vp-shadow-2: 0 3px 12px rgba(0, 0, 0, 0.07), 0 1px 4px rgba(0, 0, 0, 0.07);
+  --vp-shadow-3: 0 12px 32px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.08);
+  --vp-shadow-4: 0 14px 44px rgba(0, 0, 0, 0.12), 0 3px 9px rgba(0, 0, 0, 0.12);
+  --vp-shadow-5: 0 18px 56px rgba(0, 0, 0, 0.16), 0 4px 12px rgba(0, 0, 0, 0.16);
+}
+
+body {
+  font-family: 'Pretendard', Roboto, sans-serif;
+  font-size: var(--fs);
+}
