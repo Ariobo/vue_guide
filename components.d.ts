@@ -7,6 +7,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    CmButton: typeof import('./src/components/common/CmButton.vue')['default']
     CmInput: typeof import('./src/components/common/CmInput.vue')['default']
     Guide: typeof import('./src/layout/guide/index.vue')['default']
     GuideLayout: typeof import('./src/layout/guide/GuideLayout.vue')['default']
@@ -20,6 +21,7 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
+    UseValidation: typeof import('./src/components/useValidation.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
   }
 }

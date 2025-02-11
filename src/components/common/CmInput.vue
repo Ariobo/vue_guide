@@ -1,21 +1,21 @@
 <script setup lang="ts">
 interface InputProps {
   type?: string
+  modelValue?: string
   readonly?: boolean
   disabled?: boolean
-  modelValue?: string
   required?: boolean
   placeholder?: string
   maxlength?: number
+  error?: string
 }
-//TODO: 타입 정의
+
 const props = withDefaults(defineProps<InputProps>(), {
   type: 'text',
+  modelValue: '',
   readonly: false,
   disabled: false,
-  modelValue: '',
   required: false,
-  reactive: undefined,
 })
 
 const emit = defineEmits(['update:modelValue'])
@@ -27,7 +27,7 @@ function handleInput(event: Event) {
 </script>
 
 <template>
-  <div>
+  <div class="input-wrapper">
     <input
       :type="props.type"
       :value="props.modelValue"
@@ -37,7 +37,9 @@ function handleInput(event: Event) {
       :placeholder="props.placeholder"
       :required="props.required"
       @input="handleInput"
+      :class="['form-input', { 'has-error': props.error }]"
     />
+    <p v-if="props.error" class="error-message">{{ props.error }}</p>
   </div>
 </template>
 

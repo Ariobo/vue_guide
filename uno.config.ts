@@ -1,5 +1,14 @@
-import { defineConfig, presetUno, presetIcons, presetAttributify } from 'unocss'
+import { defineConfig } from 'unocss'
+import presetUno from '@unocss/preset-uno'
+import presetIcons from '@unocss/preset-icons'
 
 export default defineConfig({
-  presets: [presetUno(), presetIcons(), presetAttributify()],
+  presets: [
+    presetUno(),
+    presetIcons({
+      collections: {
+        ta: () => import('@iconify-json/tabler/icons.json').then((i) => i.default as any),
+      },
+    }),
+  ],
 })

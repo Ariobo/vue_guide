@@ -19,5 +19,10 @@ export default {
       name: 'Inputs',
       component: () => import('@/views/guide/components/GuideInput.vue'),
     },
+    {
+      path: 'components/button',
+      name: 'Buttons',
+      component: () => import('@/views/guide/components/GuideButton.vue'),
+    },
   ],
 }

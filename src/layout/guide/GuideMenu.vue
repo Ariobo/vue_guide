@@ -2,6 +2,7 @@
 const menus = [
   { name: '컴포넌트', isGroup: true },
   { name: 'Input', path: '/guide/components/input' },
+  { name: 'Button', path: '/guide/components/button' },
   { name: 'style', isGroup: true },
   { name: 'Color', path: '/guide/styles/color' },
 ]
