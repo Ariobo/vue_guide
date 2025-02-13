@@ -19,7 +19,6 @@ const props = withDefaults(defineProps<checkProps>(), {
   reactive: undefined,
 })
 
-const isDisabled = ref(false)
 const modelValue = defineModel('modelValue')
 </script>
 
@@ -32,6 +31,7 @@ const modelValue = defineModel('modelValue')
           class="form-radio"
           v-model="modelValue"
           :disabled="props.disabled"
+          :readonly="props.readonly"
           :value="opt[props.valueKey]"
         />
         {{ opt.label }}

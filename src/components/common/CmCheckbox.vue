@@ -32,6 +32,7 @@ const modelValue = defineModel('modelValue')
           class="form-checkbox"
           v-model="modelValue"
           :disabled="props.disabled"
+          :readonly="props.readonly"
           :value="opt[props.valueKey]"
         />
         {{ opt.label }}

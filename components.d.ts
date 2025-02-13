@@ -11,6 +11,8 @@ declare module 'vue' {
     CmCheckbox: typeof import('./src/components/common/CmCheckbox.vue')['default']
     CmInput: typeof import('./src/components/common/CmInput.vue')['default']
     CmRadio: typeof import('./src/components/common/CmRadio.vue')['default']
+    CmSelect: typeof import('./src/components/common/CmSelect.vue')['default']
+    CmTextarea: typeof import('./src/components/common/CmTextarea.vue')['default']
     Guide: typeof import('./src/layout/guide/index.vue')['default']
     GuideColor: typeof import('./src/layout/guide/GuideColor.vue')['default']
     GuideLayout: typeof import('./src/layout/guide/GuideLayout.vue')['default']

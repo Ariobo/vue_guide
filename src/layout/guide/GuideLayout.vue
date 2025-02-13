@@ -1,15 +1,11 @@
 <script setup lang="ts">
 const visibleSidebar = ref(true) // 좌측 메뉴 유지 여부
-
-function handleChangedMenu() {
-  visibleSidebar.value = true // 클릭 후에도 메뉴 유지
-}
 </script>
 
 <template>
   <div>
     <aside v-if="visibleSidebar">
-      <guide-menu @changed="handleChangedMenu" />
+      <guide-menu />
     </aside>
     <main>
       <RouterView />

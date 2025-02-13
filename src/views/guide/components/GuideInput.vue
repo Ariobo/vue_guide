@@ -9,7 +9,8 @@ const form = ref({
 })
 
 const check = ref([])
-const radio = ref([])
+const radio = ref('')
+const select = ref('value1')
 const options = ref([
   { value: 'value1', label: 'label1' },
   { value: 'value2', label: 'label2' },
@@ -79,7 +80,7 @@ function handleClearErrorMessageM() {
     </div>
 
     <div class="input-group">
-      <div class="title">standard checkbox</div>
+      <div class="title">checkbox</div>
       <div class="flex gap-15">
         <cm-checkbox v-model="check" :options="options"></cm-checkbox>
         <cm-checkbox v-model="check" :options="options" disabled></cm-checkbox>
@@ -87,10 +88,18 @@ function handleClearErrorMessageM() {
     </div>
 
     <div class="input-group">
-      <div class="title">standard checkbox</div>
+      <div class="title">radio</div>
       <div class="flex gap-15">
         <cm-radio v-model="radio" :options="options"></cm-radio>
         <cm-radio v-model="radio" :options="options" disabled></cm-radio>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <div class="title">select</div>
+      <div class="flex gap-15">
+        <cm-select v-model="select" :options="options"></cm-select>
+        <cm-select v-model="select" :options="options" disabled></cm-select>
       </div>
     </div>
   </div>
