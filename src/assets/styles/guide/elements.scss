@@ -1,9 +1,22 @@
-.box {
-  $this: &;
+.guide-title {
+  margin-bottom: var(--size-4);
+  font-size: var(--size-8);
+  font-weight: 800;
+}
 
-  & {
-    border: 1px solid var(--c-black-500);
-    border-radius: var(--round-sm);
-    background-color: var(--c-white);
+.box {
+  padding: var(--size-6);
+  border: 1px solid var(--c-black-200);
+  border-radius: var(--size-2);
+  min-width: 930px;
+  background-color: var(--c-white);
+  margin-bottom: var(--size-4);
+
+  .title {
+    font-size: var(--size-6);
+    margin-bottom: var(--size-2);
+  }
+  .input-group {
+    margin-bottom: var(--size-5);
   }
 }

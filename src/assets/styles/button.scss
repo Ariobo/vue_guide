@@ -16,10 +16,6 @@
     background-color: var(--c-default-500);
     color: var(--c-white-100);
     border: 1px solid var(--c-black-800);
-    &:hover {
-      background-color: var(---default-300);
-      color: var(--c-black-1000);
-    }
   }
 
   /* Primary 버튼 */
@@ -27,9 +23,6 @@
     background-color: var(--c-primary-500);
     color: var(--c-white-100);
     border-color: var(--c-primary-500);
-    &:hover {
-      background-color: var(--c-primary-300);
-    }
   }
 
   /* Success 버튼 */
@@ -37,9 +30,6 @@
     background-color: var(--c-success-500);
     color: var(--c-white-100);
     border-color: var(--c-success-500);
-    &:hover {
-      background-color: var(--c-success-300);
-    }
   }
 
   /* Info 버튼 */
@@ -47,9 +37,6 @@
     background-color: var(--c-info-500);
     color: var(--c-white-100);
     border-color: var(--c-info-500);
-    &:hover {
-      background-color: var(--c-info-300);
-    }
   }
 
   /* Warning 버튼 */
@@ -57,9 +44,6 @@
     background-color: var(--c-warning-500);
     color: var(--c-white-100);
     border-color: var(--c-warning-500);
-    &:hover {
-      background-color: var(--c-warning-300);
-    }
   }
 
   /* Danger 버튼 */
@@ -67,9 +51,6 @@
     background-color: var(--c-danger-500);
     color: var(--c-white-100);
     border-color: var(--c-danger-500);
-    &:hover {
-      background-color: var(--c-danger-300);
-    }
   }
 
   &:disabled {

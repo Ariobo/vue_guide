@@ -8,8 +8,11 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     CmButton: typeof import('./src/components/common/CmButton.vue')['default']
+    CmCheckbox: typeof import('./src/components/common/CmCheckbox.vue')['default']
     CmInput: typeof import('./src/components/common/CmInput.vue')['default']
+    CmRadio: typeof import('./src/components/common/CmRadio.vue')['default']
     Guide: typeof import('./src/layout/guide/index.vue')['default']
+    GuideColor: typeof import('./src/layout/guide/GuideColor.vue')['default']
     GuideLayout: typeof import('./src/layout/guide/GuideLayout.vue')['default']
     GuideMenu: typeof import('./src/layout/guide/GuideMenu.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']

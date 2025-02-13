@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { cmInput } from '@/envs'
+
 interface InputProps {
   type?: string
   modelValue?: string
@@ -7,6 +9,8 @@ interface InputProps {
   required?: boolean
   placeholder?: string
   maxlength?: number
+  minlength?: number
+  format?: string | RegExp
   error?: string
 }
 
@@ -20,9 +24,22 @@ const props = withDefaults(defineProps<InputProps>(), {
 
 const emit = defineEmits(['update:modelValue'])
 
+// 입력된 값 format체크
 function handleInput(event: Event) {
-  const value = (event.target as HTMLInputElement).value
-  emit('update:modelValue', value)
+  const target = event.target as HTMLInputElement
+
+  if (props.format) {
+    let regx = null
+    if (typeof props.format === 'string') {
+      regx = cmInput.inputFormats[props.format]
+    } else if (props.format instanceof RegExp) {
+      regx = props.format
+    }
+    if (regx) {
+      target.value = target.value.match(regx)?.join('') || ''
+    }
+  }
+  emit('update:modelValue', target.value)
 }
 </script>
 
@@ -36,6 +53,7 @@ function handleInput(event: Event) {
       :maxlength="props.maxlength"
       :placeholder="props.placeholder"
       :required="props.required"
+      :format="props.format"
       @input="handleInput"
       :class="['form-input', { 'has-error': props.error }]"
     />

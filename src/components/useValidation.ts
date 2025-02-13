@@ -32,9 +32,15 @@ export function useValidation() {
     }
   }
 
-  const clearError = (field: string) => {
-    delete errors.value[field]
+  const clearError = (field?: string | string[]) => {
+    if (!field) {
+      errors.value = {}
+    } else if (typeof field === 'string') {
+      delete errors.value[field]
+    } else {
+      field.forEach((f) => delete errors.value[f])
+    }
   }
 
-  return { errors, validate }
+  return { errors, validate, clearError }
 }
