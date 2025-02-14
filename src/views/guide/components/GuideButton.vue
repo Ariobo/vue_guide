@@ -1,6 +1,7 @@
 <template>
-  <div class="container">
-    <h1>SCSS 버튼 컴포넌트 (클래스 기반)</h1>
+  <h1 class="guide-title">Guide Button</h1>
+  <div class="box">
+    <div class="title">button</div>
 
     <div class="button-group">
       <!-- 기본 버튼 -->
@@ -47,12 +48,6 @@
 <script setup lang="ts"></script>
 
 <style scoped>
-.container {
-  padding: 20px;
-  color: white;
-  border-radius: 1px solid black;
-}
-
 .button-group {
   display: flex;
   gap: 10px;

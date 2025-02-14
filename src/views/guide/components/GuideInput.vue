@@ -11,6 +11,7 @@ const form = ref({
 const check = ref([])
 const radio = ref('')
 const select = ref('value1')
+const textarea = ref('value1')
 const options = ref([
   { value: 'value1', label: 'label1' },
   { value: 'value2', label: 'label2' },
@@ -51,7 +52,8 @@ function handleClearErrorMessageM() {
         <cm-input placeholder="Enter your text" disabled />
       </div>
     </div>
-
+  </div>
+  <div class="box">
     <div class="input-group">
       <div class="title">check validation</div>
       <cm-input
@@ -78,7 +80,9 @@ function handleClearErrorMessageM() {
         >
       </div>
     </div>
+  </div>
 
+  <div class="box">
     <div class="input-group">
       <div class="title">checkbox</div>
       <div class="flex gap-15">
@@ -86,7 +90,9 @@ function handleClearErrorMessageM() {
         <cm-checkbox v-model="check" :options="options" disabled></cm-checkbox>
       </div>
     </div>
+  </div>
 
+  <div class="box">
     <div class="input-group">
       <div class="title">radio</div>
       <div class="flex gap-15">
@@ -94,7 +100,9 @@ function handleClearErrorMessageM() {
         <cm-radio v-model="radio" :options="options" disabled></cm-radio>
       </div>
     </div>
+  </div>
 
+  <div class="box">
     <div class="input-group">
       <div class="title">select</div>
       <div class="flex gap-15">
@@ -103,6 +111,28 @@ function handleClearErrorMessageM() {
       </div>
     </div>
   </div>
+
+  <div class="box">
+    <div class="input-group">
+      <div class="title">textarea</div>
+      <div class="flex gap-15">
+        <cm-textarea v-model="textarea" :options="options"></cm-textarea>
+        <cm-textarea v-model="textarea" :options="options" disabled></cm-textarea>
+      </div>
+    </div>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.test {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #121212;
+  color: white;
+  padding: 20px;
+}
+</style>
