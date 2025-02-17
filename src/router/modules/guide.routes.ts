@@ -20,6 +20,11 @@ export default {
       component: () => import('@/views/guide/components/GuideInput.vue'),
     },
     {
+      path: 'components/modal',
+      name: 'Modal',
+      component: () => import('@/views/guide/components/GuideModal.vue'),
+    },
+    {
       path: 'components/button',
       name: 'Buttons',
       component: () => import('@/views/guide/components/GuideButton.vue'),

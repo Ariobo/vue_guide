@@ -6,9 +6,10 @@ const emit = defineEmits(['changed'])
 const menus = [
   { name: '컴포넌트', isGroup: true },
   { name: 'Input', path: '/guide/components/input' },
-  { name: 'Button', path: '/guide/components/button' },
+  { name: 'Modal', path: '/guide/components/modal' },
   { name: 'style', isGroup: true },
   { name: 'Color', path: '/guide/styles/color' },
+  { name: 'Button', path: '/guide/components/button' },
 ]
 
 const toggleMenu = () => {
