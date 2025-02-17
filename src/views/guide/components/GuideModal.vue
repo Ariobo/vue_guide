@@ -1,21 +1,25 @@
 <script setup lang="ts">
-const $modal = <any>inject('$modal')
+const modal = inject<ModalApi>('$modal')
+
+interface ModalApi {
+  open: (modal: any) => void
+  close: (id: string) => void
+  modals: any[]
+}
 
 function openModal() {
-  $modal.open({
-    component: () => import('@/components/modal/SamplePopup.vue'),
+  if (!modal) {
+    return
+  }
+
+  modal.open({
+    component: () => import('@/components/modal/SamplePopup.vue'), // 동적으로 import
     options: {
       title: '샘플 팝업',
-      width: 800,
-    },
-    bind: {
-      detailId: 'sss',
-      sampleKey: 'sampleValue',
-    },
-    on: {
-      refresh: (result: { popupValue: string; returnValue: string }) => {
-        console.log(result)
-      },
+      width: '600px',
+      height: '400px',
+      id: `sample-${Date.now()}`,
+      bind: { detailId: '12345', sampleKey: 'test' },
     },
   })
 }

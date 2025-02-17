@@ -63,13 +63,13 @@ onMounted(() => {
             {{ modal.options.title }}
           </div>
           <div class="__modal__close">
-            <button @click="close"><span class="i-ms-close-rounded"></span></button>
+            <button class="close-btn" @click="close">✕</button>
           </div>
         </div>
         <div class="__modal__body">
           <component
             :is="component"
-            v-bind="modal.bind"
+            v-bind="modal.options.bind"
             v-on="Object.assign(modal.on || {}, { close: close })"
           ></component>
         </div>
@@ -154,6 +154,23 @@ onMounted(() => {
     flex: 1;
     display: flex;
     flex-direction: column;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s;
+
+  &:hover {
+    color: #ff3b30;
   }
 }
 </style>
