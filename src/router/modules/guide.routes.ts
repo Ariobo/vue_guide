@@ -2,10 +2,10 @@ import GuideLayout from '@/layout/guide/GuideLayout.vue'
 
 export default {
   path: '/guide',
-  component: GuideLayout, // 레이아웃을 상위 컴포넌트로 설정
+  component: GuideLayout,
   children: [
     {
-      path: '', // 기본 경로
+      path: '',
       name: 'GuideHome',
       component: () => import('@/views/guide/GuideHome.vue'),
     },
@@ -18,6 +18,11 @@ export default {
       path: 'components/input',
       name: 'Inputs',
       component: () => import('@/views/guide/components/GuideInput.vue'),
+    },
+    {
+      path: 'components/dialog',
+      name: 'Dialog',
+      component: () => import('@/views/guide/components/GuideDialog.vue'),
     },
     {
       path: 'components/modal',

@@ -1,5 +1,5 @@
 import { type AppContext, createVNode, render, shallowReactive } from 'vue'
-import ModalContainer from './ModalContainer.vue'
+import ModalContainer from './components/ModalContainer.vue'
 
 let _context: AppContext | null = null
 

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { defineModel, withDefaults, defineProps } from 'vue'
-
 interface Props {
   readonly?: boolean
   disabled?: boolean

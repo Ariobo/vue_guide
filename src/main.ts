@@ -10,6 +10,7 @@ import 'virtual:uno.css'
 import './assets/styles/main.scss'
 
 import ModalPlugin from '@/components/modal/index'
+import DialogPlugin from '@/components/dialog/index'
 
 const app = createApp(App)
 
@@ -20,5 +21,7 @@ app.use(router)
 app.use(ModalPlugin, {
   clickToClose: true,
 })
+
+app.use(DialogPlugin, {})
 
 app.mount('#app')

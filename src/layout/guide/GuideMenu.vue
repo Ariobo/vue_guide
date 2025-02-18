@@ -7,6 +7,7 @@ const menus = [
   { name: '컴포넌트', isGroup: true },
   { name: 'Input', path: '/guide/components/input' },
   { name: 'Modal', path: '/guide/components/modal' },
+  { name: 'Dialog', path: '/guide/components/dialog' },
   { name: 'style', isGroup: true },
   { name: 'Color', path: '/guide/styles/color' },
   { name: 'Button', path: '/guide/components/button' },

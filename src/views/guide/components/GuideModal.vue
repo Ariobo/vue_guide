@@ -1,11 +1,11 @@
 <script setup lang="ts">
-const modal = inject<ModalApi>('$modal')
-
 interface ModalApi {
   open: (modal: any) => void
   close: (id: string) => void
   modals: any[]
 }
+
+const modal = inject<ModalApi>('$modal')
 
 function openModal() {
   if (!modal) {
@@ -13,7 +13,7 @@ function openModal() {
   }
 
   modal.open({
-    component: () => import('@/components/modal/SamplePopup.vue'), // 동적으로 import
+    component: () => import('@/components/modal/SamplePopup.vue'),
     options: {
       title: '샘플 팝업',
       width: '600px',
@@ -26,8 +26,8 @@ function openModal() {
 </script>
 
 <template>
-  <h1>Guide Modal</h1>
-  <div>
+  <h1 class="guide-title">Guide Modal</h1>
+  <div class="box">
     <cm-button class="default" @click="openModal">Open Modal</cm-button>
   </div>
 </template>

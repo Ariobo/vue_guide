@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ModalComponent from './ModalComponent.vue'
+import ModalComponent from '@/components/modal/components/ModalComponent.vue'
 const props = defineProps<{
   api: any
 }>()
