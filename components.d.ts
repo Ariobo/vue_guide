@@ -27,6 +27,8 @@ declare module 'vue' {
     IconTooling: typeof import('./src/components/icons/IconTooling.vue')['default']
     ModalComponent: typeof import('./src/components/modal/components/ModalComponent.vue')['default']
     ModalContainer: typeof import('./src/components/modal/components/ModalContainer.vue')['default']
+    Notification: typeof import('./src/components/notification/components/Notification.vue')['default']
+    NotificationComponent: typeof import('./src/components/notification/components/NotificationComponent.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SamplePopup: typeof import('./src/components/modal/SamplePopup.vue')['default']

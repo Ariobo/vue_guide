@@ -1,0 +1,27 @@
+.vue-notification {
+  font-size: var(--size-3);
+  padding: var(--size-3) var(--size-5);
+  border-radius: var(--size-10);
+  width: auto;
+  border-left-width: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &.success {
+    background-color: var(--c-success-500);
+    color: var(--c-white-100);
+  }
+  &.error,
+  &.danger {
+    background-color: var(--c-danger-500);
+    color: var(--c-white-100);
+  }
+  &.warning {
+    background-color: var(--c-warning-500);
+    color: var(--c-white-100);
+  }
+  &.info {
+    background-color: var(--c-info-500);
+    color: var(--c-white-100);
+  }
+}

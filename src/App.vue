@@ -1,4 +1,5 @@
 <template>
+  <notifications width="auto" />
   <router-view />
 </template>
 

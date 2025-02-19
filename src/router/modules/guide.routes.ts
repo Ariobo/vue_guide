@@ -12,7 +12,7 @@ export default {
     {
       path: 'styles/color',
       name: 'Colors',
-      component: () => import('@/views/guide/styles/GuideColors.vue'),
+      component: () => import('@/views/guide/styles/GuideColors.vue'),
     },
     {
       path: 'components/input',
@@ -28,6 +28,11 @@ export default {
       path: 'components/modal',
       name: 'Modal',
       component: () => import('@/views/guide/components/GuideModal.vue'),
+    },
+    {
+      path: 'components/notification',
+      name: 'Notification',
+      component: () => import('@/views/guide/components/GuideNotification.vue'),
     },
     {
       path: 'components/button',
