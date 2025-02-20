@@ -35,6 +35,11 @@ export default {
       component: () => import('@/views/guide/components/GuideNotification.vue'),
     },
     {
+      path: 'components/tree',
+      name: 'Tree',
+      component: () => import('@/views/guide/components/GuideTree.vue'),
+    },
+    {
       path: 'components/button',
       name: 'Buttons',
       component: () => import('@/views/guide/components/GuideButton.vue'),

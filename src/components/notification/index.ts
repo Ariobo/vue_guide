@@ -11,7 +11,7 @@ export default {
   install(app: App, globalOptions = {}) {
     const defaultOptions = {
       type: 'default',
-      duration: 1000000000,
+      duration: 3000,
       ignoreDuplicates: false,
     }
     const api = {

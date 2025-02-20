@@ -9,6 +9,7 @@ const menus = [
   { name: 'Modal', path: '/guide/components/modal' },
   { name: 'Dialog', path: '/guide/components/dialog' },
   { name: 'Notification', path: '/guide/components/notification' },
+  { name: 'Tree', path: '/guide/components/tree' },
   { name: 'style', isGroup: true },
   { name: 'Color', path: '/guide/styles/color' },
   { name: 'Button', path: '/guide/components/button' },

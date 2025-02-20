@@ -37,3 +37,20 @@ export function useValidation() {
 
   return { errors, validate }
 }
+
+export const buildTree = (flatData: { id: number; label: string; parentId: number | null }[]) => {
+  const map = new Map<number, any>()
+  const tree: any[] = []
+
+  flatData.forEach((item) => map.set(item.id, { ...item, children: [] }))
+
+  flatData.forEach((item) => {
+    if (item.parentId !== null) {
+      map.get(item.parentId)?.children.push(map.get(item.id))
+    } else {
+      tree.push(map.get(item.id))
+    }
+  })
+
+  return tree
+}
