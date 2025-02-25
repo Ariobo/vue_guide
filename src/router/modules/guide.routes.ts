@@ -45,6 +45,11 @@ export default {
       component: () => import('@/views/guide/components/GuideTable.vue'),
     },
     {
+      path: 'components/pagiNation',
+      name: 'PagiNation',
+      component: () => import('@/views/guide/components/GuidePagiNation.vue'),
+    },
+    {
       path: 'components/button',
       name: 'Buttons',
       component: () => import('@/views/guide/components/GuideButton.vue'),

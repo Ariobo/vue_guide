@@ -11,6 +11,7 @@ const menus = [
   { name: 'Notification', path: '/guide/components/notification' },
   { name: 'Tree', path: '/guide/components/tree' },
   { name: 'Table', path: '/guide/components/table' },
+  { name: 'PagiNation', path: '/guide/components/pagiNation' },
   { name: 'style', isGroup: true },
   { name: 'Color', path: '/guide/styles/color' },
   { name: 'Button', path: '/guide/components/button' },

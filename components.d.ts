@@ -10,6 +10,8 @@ declare module 'vue' {
     CmButton: typeof import('./src/components/common/CmButton.vue')['default']
     CmCheckbox: typeof import('./src/components/common/CmCheckbox.vue')['default']
     CmInput: typeof import('./src/components/common/CmInput.vue')['default']
+    CmpagiNation: typeof import('./src/components/common/CmpagiNation.vue')['default']
+    CmPagiNation: typeof import('./src/components/common/CmPagiNation.vue')['default']
     CmRadio: typeof import('./src/components/common/CmRadio.vue')['default']
     CmSelect: typeof import('./src/components/common/CmSelect.vue')['default']
     CmTable: typeof import('./src/components/common/CmTable.vue')['default']
