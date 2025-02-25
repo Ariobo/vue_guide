@@ -12,6 +12,8 @@ declare module 'vue' {
     CmInput: typeof import('./src/components/common/CmInput.vue')['default']
     CmRadio: typeof import('./src/components/common/CmRadio.vue')['default']
     CmSelect: typeof import('./src/components/common/CmSelect.vue')['default']
+    CmTable: typeof import('./src/components/common/CmTable.vue')['default']
+    CmTableColumn: typeof import('./src/components/common/CmTableColumn.vue')['default']
     CmTest: typeof import('./src/components/common/CmTest.vue')['default']
     CmTextarea: typeof import('./src/components/common/CmTextarea.vue')['default']
     'CmTree': typeof import('./src/components/common/CmTree.vue')['default']

@@ -10,6 +10,7 @@ const menus = [
   { name: 'Dialog', path: '/guide/components/dialog' },
   { name: 'Notification', path: '/guide/components/notification' },
   { name: 'Tree', path: '/guide/components/tree' },
+  { name: 'Table', path: '/guide/components/table' },
   { name: 'style', isGroup: true },
   { name: 'Color', path: '/guide/styles/color' },
   { name: 'Button', path: '/guide/components/button' },

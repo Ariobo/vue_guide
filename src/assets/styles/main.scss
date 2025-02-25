@@ -4,3 +4,9 @@
 @use './guide/sizes';
 @use './input.scss';
 @use './button.scss';
+
+.hidden {
+  display: none;
+  height: 0;
+  opacity: 0;
+}

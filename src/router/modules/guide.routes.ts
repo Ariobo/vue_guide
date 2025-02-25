@@ -40,6 +40,11 @@ export default {
       component: () => import('@/views/guide/components/GuideTree.vue'),
     },
     {
+      path: 'components/table',
+      name: 'Table',
+      component: () => import('@/views/guide/components/GuideTable.vue'),
+    },
+    {
       path: 'components/button',
       name: 'Buttons',
       component: () => import('@/views/guide/components/GuideButton.vue'),
